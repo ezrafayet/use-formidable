@@ -1,0 +1,45 @@
+{
+  "name": "hook-for-react-use-form",
+  "version": "2.5.4",
+  "description": "Handle big nested forms and use live modifiers and validators with a simple react hook",
+  "main": "lib/cjs/index.js",
+  "types": "lib/cjs/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {
+    "@types/node": "^14.6.4",
+    "@types/react": "^16.9.49",
+    "react": "^16.13.1",
+    "typescript": "^4.0.2"
+  },
+  "scripts": {
+    "build": "npm run build:cjs",
+    "build:esm": "tsc --build tsconfig-esm.json",
+    "build:cjs": "tsc --build tsconfig-cjs.json",
+    "test": "",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run test",
+    "preversion": "",
+    "version": "npm run format && git add -A lib",
+    "postversion": "git push && git push --tags"
+  },
+  "keywords": [
+    "hook",
+    "form",
+    "react"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adzaria/hook-for-react-use-form.git"
+  },
+  "author": "adzaria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adzaria/hook-for-react-use-form/issues"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "homepage": "https://github.com/adzaria/hook-for-react-use-form#readme"
+}

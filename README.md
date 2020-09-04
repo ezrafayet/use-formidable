@@ -1,11 +1,11 @@
 
-# hook-for-react-use-form
+# use-formidable
 
 ![alt react](https://img.shields.io/badge/react-v16.13.x-brightgreen)
 ![alt react](https://img.shields.io/badge/size-%3C50kB-brightgreen)
 ![alt react](https://img.shields.io/badge/stage-testing-orange)
 
-[Star on GitHub](https://github.com/adzaria/hook-for-react-use-form) to follow updates and join
+[Star on GitHub](https://github.com/use-wizard/use-formidable) to follow updates and join
 
 Having many big nested forms quickly lead to huge components, duplicates and hard-to-maintain code. useForm is a dead-easy-to-use lightweight react hook to handle big nested forms in an easy declarative way
 
@@ -17,22 +17,22 @@ Having many big nested forms quickly lead to huge components, duplicates and har
 * It handles any kind of inputs (it turns checkboxes into booleans and handles files input),  
 * It comes with a set of live modifiers and validators, and it lets you use custom validators,
 * Types are included for typescript, it is lightweight and has no dependencies,
-* Use it with [use-wizard](https://github.com/adzaria/use-wizard) to handle complex multi-path, multi-steps nested forms
+* Use it with [use-wizard](https://github.com/use-wizard/use-wizard) to handle complex multi-path, multi-steps nested forms
 
 # Get started 🚀
 
 ## Install it 
 ```
-npm i hook-for-react-use-form
+npm i use-formidable
 ```
 
 ## Call it
 ```
-const useForm = require('hook-for-react-use-form');
+const useForm = require('use-formidable');
 
 or
 
-import {useForm} from "hook-for-react-use-form";
+import {useForm} from "use-formidable";
 
 ```
 
@@ -62,13 +62,13 @@ const initialForm = {
 
 ## Declare useForm like you would declare any other hook
 ```
-const [form, updateForm, formHandler] = useForm(initialForm);
+const [form, updateForm, formidable] = useForm(initialForm);
 ```
 
 You get 3 objects:
 * **form** holds the values of your form
 * **updateForm** is used to update the form's data (check bellow)
-* **formHandler** holds specific methods (check bellow)
+* **formidable** holds specific methods (check bellow)
 
 ## And finally just declare your managed components
 
@@ -122,7 +122,7 @@ Check further rules in the doc
     * ***maximumLength: 130*** will prevent user from typing more than n characters
     * ***custom: (input: any) => any*** allows you to pass a custom modifier (must return the new  value)
 
-* **Validators**: Validators help you to give a real-time feedback to your users on what's missing / wrong about their data. They are part of the formHandler object.
+* **Validators**: Validators help you to give a real-time feedback to your users on what's missing / wrong about their data. They are part of the formidable object.
     * ***isEmail(value)*** checks if a value is an email
     * ***isLengthAbove(value)*** checks if a value is above or equal to minimum length
     * ***isLengthUnder(value)*** checks if a value is under or equal to a maximum length 
@@ -167,13 +167,13 @@ Check further rules in the doc
     ```
 
 * What you should be carefully about regarding components
-    * Your element must always have a name
+    * Your input must always have a name
     * If the data you want to update is nested, declare the name as the path separated by '.' like in the examples above
     
     
 # Go further
 
-* Use it with [use-wizard](https://github.com/adzaria/use-wizard) to build multi-paths, multi-steps wizards  
+* Use it with [use-wizard](https://github.com/use-wizard/use-wizard) to build multi-paths, multi-steps wizards  
 
 # Great alternatives
 

@@ -1,6 +1,6 @@
 {
-  "name": "hook-for-react-use-form",
-  "version": "2.5.4",
+  "name": "use-formidable",
+  "version": "2.5.6",
   "description": "Handle big nested forms and use live modifiers and validators with a simple react hook",
   "main": "lib/cjs/index.js",
   "types": "lib/cjs/index.d.ts",
@@ -31,15 +31,15 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adzaria/hook-for-react-use-form.git"
+    "url": "git+https://github.com/use-wizard/use-formidable.git"
   },
   "author": "adzaria",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/adzaria/hook-for-react-use-form/issues"
+    "url": "https://github.com/use-wizard/use-formidable/issues"
   },
   "files": [
     "lib/**/*"
   ],
-  "homepage": "https://github.com/adzaria/hook-for-react-use-form#readme"
+  "homepage": "https://github.com/use-wizard/use-formidable#readme"
 }

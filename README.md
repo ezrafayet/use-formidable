@@ -1,15 +1,20 @@
 
 # use-formidable
 
-![alt react](https://img.shields.io/badge/react-v16.13.x-brightgreen)
-![alt react](https://img.shields.io/badge/size-%3C50kB-brightgreen)
-![alt react](https://img.shields.io/badge/stage-testing-orange)
-
-[Star on GitHub](https://github.com/use-wizard/use-formidable) to follow updates and join
-
-Having many big nested forms quickly lead to huge components, duplicates and hard-to-maintain code. useForm is a dead-easy-to-use lightweight react hook to handle big nested forms in an easy declarative way
-
-![alt exaltation](https://static.adzaria.co/useform.png)
+<div align="center">
+    <div><br/></div>
+    <img src="https://static.adzaria.co/miniatures/formidable.png" alt="use-wizard" width="200"/>
+    <div><br/></div>
+    <div>Having many big nested forms quickly lead to huge components, duplicates and hard-to-maintain code. useForm is a dead-easy-to-use lightweight react hook to handle big nested forms in an easy declarative way.</div>
+    <div><br/></div>
+        <div>Join on <a href="https://github.com/use-wizard/use-formidable" alt="GitHub">GitHub</a> to follow, test, raise issues and join !</div>
+    <div><br/></div>
+    <div>
+        <img src="https://img.shields.io/badge/react-v16.13.x-brightgreen" />
+        <img src="https://img.shields.io/badge/stage-testing-orange" />
+    </div>
+    <div><br/></div>
+</div>
 
 # What does it do
 

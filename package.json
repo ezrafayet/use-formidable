@@ -2,6 +2,7 @@
   "name": "hook-for-react-use-form",
   "version": "2.5.4",
   "description": "Handle big nested forms and use live modifiers and validators with a simple react hook",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "main": "lib/cjs/index.js",
   "types": "lib/cjs/index.d.ts",
   "directories": {

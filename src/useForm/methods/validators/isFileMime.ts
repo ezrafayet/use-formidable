@@ -17,7 +17,9 @@ const mimesDictionary = {
   csv: "text/csv",
 };
 
-const isFileMime = (file: any, extensions: TSupportedMimes[]) => {
+export type IsFileMime = (file: any, extensions: TSupportedMimes[]) => boolean;
+
+const isFileMime: IsFileMime = (file: any, extensions: TSupportedMimes[]) => {
   
   if(window.FileReader && window.Blob) {
     

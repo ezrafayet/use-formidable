@@ -1,6 +1,8 @@
 export {isFileSmallerThan};
 
-const isFileSmallerThan = (file: any, maximumSizeInBytes: number) => {
+export type IsFileSmallerThan = (file: any, maximumSizeInBytes: number) => boolean;
+
+const isFileSmallerThan: IsFileSmallerThan = (file: any, maximumSizeInBytes: number) => {
   
   if(!file) {
     return null;

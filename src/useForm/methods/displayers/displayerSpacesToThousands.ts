@@ -4,7 +4,9 @@ import {isTypeNumber} from "../../typeGuards/isTypeNumber";
 
 export {displayerSpacesToThousands};
 
-const displayerSpacesToThousands = (value: unknown) => {
+export type DisplayerSpacesToThousands = (value: unknown) => string;
+
+const displayerSpacesToThousands: DisplayerSpacesToThousands = (value: unknown): string => {
   
   let stringifiedValue: string = '';
   

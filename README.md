@@ -175,7 +175,6 @@ Check further rules in the doc
     * Your input must always have a name
     * If the data you want to update is nested, declare the name as the path separated by '.' like in the examples above
     
-    
 # Go further
 
 * Use it with [use-wizard](https://github.com/use-wizard/use-wizard) to build multi-paths, multi-steps wizards  

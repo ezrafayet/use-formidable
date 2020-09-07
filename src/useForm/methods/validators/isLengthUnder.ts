@@ -1,5 +1,7 @@
 export {isLengthUnder};
 
-const isLengthUnder = (value: any, length: number) => {
+export type IsLengthUnder = (value: string, length: number) => boolean;
+
+const isLengthUnder: IsLengthUnder = (value: string, length: number): boolean => {
   return value.length <= length;
 };

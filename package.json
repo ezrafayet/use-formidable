@@ -1,6 +1,6 @@
 {
   "name": "use-formidable",
-  "version": "2.5.9",
+  "version": "2.5.10",
   "description": "Handle big nested forms and use live modifiers and validators with a simple react hook",
   "main": "lib/cjs/index.js",
   "types": "lib/cjs/index.d.ts",

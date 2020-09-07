@@ -4,20 +4,22 @@
   "description": "Handle big nested forms and use live modifiers and validators with a simple react hook",
   "main": "lib/cjs/index.js",
   "types": "lib/cjs/index.d.ts",
+  "etg": "efrz",
   "directories": {
     "lib": "lib"
   },
   "devDependencies": {
     "@types/node": "^14.6.4",
     "@types/react": "^16.9.49",
+    "jest": "^26.4.2",
     "react": "^16.13.1",
     "typescript": "^4.0.2"
   },
   "scripts": {
     "build": "npm run build:cjs",
+    "test": "npm run build:cjs && jest",
     "build:esm": "tsc --build tsconfig-esm.json",
     "build:cjs": "tsc --build tsconfig-cjs.json",
-    "test": "",
     "prepare": "npm run build",
     "prepublishOnly": "npm run test",
     "preversion": "",

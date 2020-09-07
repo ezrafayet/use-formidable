@@ -31,6 +31,10 @@ const displayerSpacesToThousands: DisplayerSpacesToThousands = (value: unknown):
   
   modifiedValueInt = modifiedValueInt.replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
   
-  return `${modifiedValueInt}.${modifiedValueFloat}`;
+  if(modifiedValueFloat) {
+    return `${modifiedValueInt}.${modifiedValueFloat}`;
+  }
+  
+  return modifiedValueInt;
   
 };

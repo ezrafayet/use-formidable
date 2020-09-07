@@ -1,6 +1,6 @@
 
 # BUILD DIRECTORY
-lib/
+lib
 test
 
 # MODULES

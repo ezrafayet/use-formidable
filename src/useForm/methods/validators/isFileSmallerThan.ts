@@ -5,7 +5,7 @@ export type IsFileSmallerThan = (file: any, maximumSizeInBytes: number) => boole
 const isFileSmallerThan: IsFileSmallerThan = (file: any, maximumSizeInBytes: number) => {
   
   if(!file) {
-    return null;
+    throw new Error("Wizard: a file must be provided");
   }
   
   if(Array.isArray(file)) {

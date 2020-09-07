@@ -24,7 +24,7 @@ const isFileMime: IsFileMime = (file: any, extensions: TSupportedMimes[]) => {
   if(window.FileReader && window.Blob) {
     
     if(!file) {
-      return null;
+      throw new Error("Wizard: a file must be provided");
     }
     
     if(Array.isArray(file)) {

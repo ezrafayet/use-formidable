@@ -5,7 +5,7 @@
     <div><br/></div>
     <img src="https://static.adzaria.co/miniatures/formidable.png" alt="use-wizard" width="200"/>
     <div><br/></div>
-    <div>Having many big nested forms quickly lead to huge components, duplicates and hard-to-maintain code. useForm is a dead-easy-to-use lightweight react hook to handle big nested forms in an easy declarative way.</div>
+    <div>Having many big nested forms quickly leads to huge components, duplicates and hard-to-maintain code. useForm is a dead-easy-to-use lightweight react hook to handle big nested forms in an easy declarative way.</div>
     <div><br/></div>
         <div>Join on <a href="https://github.com/use-wizard/use-formidable" alt="GitHub">GitHub</a> to follow, test, raise issues and join !</div>
     <div><br/></div>

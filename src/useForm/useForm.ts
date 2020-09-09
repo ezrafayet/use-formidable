@@ -11,6 +11,7 @@ import {InitialForm, useFormReducer} from "./reducer/useFormReducer";
 import {getInitialForm} from "./methods/getInitialForm";
 import {reset} from "./methods/reset";
 import {update} from "./methods/update";
+import {setForm} from "./methods/setForm";
 
 export {useForm};
 
@@ -18,6 +19,7 @@ interface Methods {
   
   reset: Function;
   getInitialForm: Function;
+  setForm: Function;
 }
 
 interface Validators {
@@ -47,6 +49,7 @@ const useForm = (initialForm: InitialForm,) => {
     
     reset: reset(updateForm),
     getInitialForm: getInitialForm(initialForm),
+    setForm: setForm(updateForm),
   }
   
   const validators: Validators = {

@@ -7,7 +7,7 @@ export type InitialForm = { [key: string]: any; };
 
 type FormState = { [key: string]: any; };
 
-type ActionsTypes = "update" | "updateCheckbox" | "reset" | undefined;
+type ActionsTypes = "update" | "updateCheckbox" | "reset" | "set" | undefined;
 
 type Action = {
   
@@ -23,9 +23,11 @@ type Action = {
 const useFormReducer = (initialForm: InitialForm) => (state: FormState, action: Action) => {
   
   if(action.actionType === "reset") {
-    return ({
-      ...(initialForm || {}),
-    });
+    return ({...(initialForm || {}),});
+  }
+  
+  if(action.actionType === "set") {
+    return action.value;
   }
   
   /** Get the path as an array of successive keys */

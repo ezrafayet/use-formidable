@@ -142,6 +142,7 @@ Check further rules in the doc
 * **Other methods**: They are part of formHandler object.
     * ***getInitialForm*** returns the initial state
     * ***reset*** resets all values
+    * ***set*** sets a new state for the form (useful for data fetching)
     * ***cancel*** cancel the last input that was modified <-- not available yet
 
 * Which inputs are handled ?
